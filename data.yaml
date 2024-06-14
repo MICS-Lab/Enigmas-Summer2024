@@ -13,3 +13,5 @@ enigmas:
     description: Smallest number of weight 25
   - answer: 7693
     description: Decoding
+  - answer: 2064
+    description: Treasure Safe
