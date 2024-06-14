@@ -38,3 +38,23 @@ function checkPassword1() {
 
 checkPassword1();
 
+
+function checkPassword2() {
+  var password = document.getElementById("password2").value;
+  var sha_password = SHA256(password.replace(/ /g, ''));
+  if (
+    sha_password ==
+    "d48ff4b2f68a10fd7c86f185a6ccede0dc0f2c48538d697cb33b6ada3f1e85db"
+  ) {
+    document.getElementById("enigma2-check").style = "display: block";
+    document.getElementById("enigma2-no-check").style = "display: none";
+  } else {
+    document.getElementById("enigma2-no-check").style = "display: block";
+    document.getElementById("enigma2-check").style = "display: none";
+    document.getElementById("password2").value = "";
+  }
+  final_code();
+}
+
+checkPassword2();
+
