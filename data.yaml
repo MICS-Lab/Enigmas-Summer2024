@@ -1,3 +1,5 @@
 enigmas:
   - answer: 87
     description: Fruits Equations
+  - answer: 27
+    description: Animals Equations
