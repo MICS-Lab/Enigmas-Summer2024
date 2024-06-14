@@ -4,3 +4,6 @@ A series of enigmas for the high school students interning in the lab during the
 
 Answering website:
 https://mics-lab.github.io/Enigmas-Summer2024/
+
+Statements website:
+https://mics-lab.github.io/Enigmas-Summer2024/enigmas/
