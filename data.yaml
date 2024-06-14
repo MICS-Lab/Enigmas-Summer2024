@@ -11,3 +11,5 @@ enigmas:
     description: The reindeers of CentraleSupélec
   - answer: 799
     description: Smallest number of weight 25
+  - answer: 7693
+    description: Decoding
