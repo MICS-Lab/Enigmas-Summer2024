@@ -5,7 +5,8 @@ function final_code() {
     document.getElementById("password2").value + 
     document.getElementById("password3").value + 
     document.getElementById("password4").value + 
-    document.getElementById("password5").value;
+    document.getElementById("password5").value + 
+    document.getElementById("password6").value;
 
   var sha_password = SHA256(
     password.replace(/ /g, "")
@@ -13,7 +14,7 @@ function final_code() {
   var user_code = sha_password.substring(0, 8).toUpperCase();
   if (
     SHA256(user_code) ==
-    "d3e2903a3806a39bf1d4239847e6405fffe9852140d73141957c937787cb38f7"
+    "3d3093453601bdd8b6d4f0f346dbbeee60b27a4832d4fcde6862e0514d91d5ce"
   ) {
     document.getElementById("finish-code").innerHTML =
       'Finish code: <span id="code">' + user_code + "</span>";
