@@ -158,3 +158,23 @@ function checkPassword7() {
 
 checkPassword7();
 
+
+function checkPassword8() {
+  var password = document.getElementById("password8").value;
+  var sha_password = SHA256(password.replace(/ /g, ''));
+  if (
+    sha_password ==
+    "ea93c64fbd9104032b839031817f0a7d3b2e20c65c94f48feee427a98a537d2b"
+  ) {
+    document.getElementById("enigma8-check").style = "display: block";
+    document.getElementById("enigma8-no-check").style = "display: none";
+  } else {
+    document.getElementById("enigma8-no-check").style = "display: block";
+    document.getElementById("enigma8-check").style = "display: none";
+    document.getElementById("password8").value = "";
+  }
+  final_code();
+}
+
+checkPassword8();
+
