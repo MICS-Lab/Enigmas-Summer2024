@@ -164,7 +164,7 @@ function checkPassword8() {
   var sha_password = SHA256(password.replace(/ /g, ''));
   if (
     sha_password ==
-    "ea93c64fbd9104032b839031817f0a7d3b2e20c65c94f48feee427a98a537d2b"
+    "dd9b0dfcdbc5fb86b5e84ab4d0a3585a72c1560c3f813315b77065ef7d0b5df3"
   ) {
     document.getElementById("enigma8-check").style = "display: block";
     document.getElementById("enigma8-no-check").style = "display: none";
