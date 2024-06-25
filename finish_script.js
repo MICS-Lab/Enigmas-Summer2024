@@ -17,7 +17,7 @@ function final_code() {
   var user_code = sha_password.substring(0, 8).toUpperCase();
   if (
     SHA256(user_code) ==
-    "282fe59041c94f1f99b708dafad08833fdabd54dee155b86f727553a70ee9587"
+    "4b51d5c046e21bfdb8eefe5f0f79b97a8c3189d9a4e0b565e9344264c143a33e"
   ) {
     document.getElementById("finish-code").innerHTML =
       'Finish code: <span id="code">' + user_code + "</span>";
